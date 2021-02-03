@@ -5,3 +5,4 @@
  commit -- 提交
  readme --自述文件
  modified --修改
+ pretty -- 美化

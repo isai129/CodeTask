@@ -23,3 +23,14 @@ $ git commit -m "add 3 files."
 
 git status   查看仓库状态（status：状态）cd le
 git diff <file> 查看差异（difference)，格式是unix通用的diff格式
+
+#日志
+git log 显示从近到远的提交日志
+git log --pretty=oneline   一行显示，只显示哈希值和提交说明
+head 当前版本（指针）
+
+#版本回退
+git reset --head <commit_id>
+
+#命令记录
+git reflog
