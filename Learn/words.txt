@@ -3,3 +3,5 @@
  status -- 状态
  diff-- 差异（difference）
  commit -- 提交
+ readme --自述文件
+ modified --修改

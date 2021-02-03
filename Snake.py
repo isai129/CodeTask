@@ -1,6 +1,7 @@
-import pygame
-import sys
 import random
+import sys
+
+import pygame
 
 # 全局定义
 SCREEN_X = 600
@@ -158,4 +159,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-pip
