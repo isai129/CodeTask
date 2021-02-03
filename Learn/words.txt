@@ -1,0 +1,5 @@
+#单词本
+ init -- 初始化（initialization）
+ status -- 状态
+ diff-- 差异（difference）
+ commit -- 提交
