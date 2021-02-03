@@ -2,7 +2,7 @@
 --终端命令
 mkdir 创建目录
 pwd 显示当前目录
-
+dir 显示当期目录 （windows）
 #git命令
 
 --git init  初始化仓库，将当前目录变成git可管理的仓库
@@ -14,3 +14,9 @@ pwd 显示当前目录
 #Unix的哲学是“没有消息就是好消息”
 #把文件提交到仓库
 --git commit -m <message>"说明" 告诉get，把文件提交到仓库，-m后面是本次提交的说明
+
+
+commit 可以一次提交多个文件
+$ git add file1.txt
+$ git add file2.txt file3.txt
+$ git commit -m "add 3 files."
