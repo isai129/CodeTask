@@ -16,8 +16,10 @@ dir 显示当期目录 （windows）
 --git commit -m <message>"说明" 告诉get，把文件提交到仓库，-m后面是本次提交的说明
 
 
-commit 可以一次提交多个文件
+git commit 可以一次提交多个文件
 $ git add file1.txt
 $ git add file2.txt file3.txt
 $ git commit -m "add 3 files."
 
+git status   查看仓库状态（status：状态）cd le
+git diff <file> 查看差异（difference)，格式是unix通用的diff格式
