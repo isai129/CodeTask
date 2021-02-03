@@ -6,3 +6,11 @@
  readme --自述文件
  modified --修改
  pretty -- 美化
+ project --项目、工程
+ Public -- 公共|公用
+ Private -- 私有
+ template -- 模板
+ Column --列，专栏
+ preset -- 预设，预置
+ repositories -- 仓库，资源库
+ Description -- 描述，说明词典
