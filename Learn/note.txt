@@ -31,6 +31,5 @@ head 当前版本（指针）
 
 #版本回退
 git reset --head <commit_id>
-
 #命令记录
 git reflog
