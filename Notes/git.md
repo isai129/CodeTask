@@ -48,4 +48,7 @@ $ git add <file> 将文件添加到仓库(暂存区)
     3. -k 跳过对重命名或移动出错的文件
     4. -n 只显示信息
     @只能修改已经追踪的文件，直接commit提交
-    
+####工作区（Work Directory)-版本库(Repostory)
+Work Directory-本地工作目录,其中的隐藏目录.git未Git的版本库\
+Repostory-版本库
+(![image]\Images\)
