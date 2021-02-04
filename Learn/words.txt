@@ -14,3 +14,4 @@
  preset -- 预设，预置
  repositories -- 仓库，资源库
  Description -- 描述，说明词典
+ origin -- 原点，远程库Git
