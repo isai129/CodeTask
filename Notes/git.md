@@ -83,7 +83,7 @@ $ git add <file> 将文件添加到仓库(暂存区-stage)
 ##### 撤销工作区的修改
 
     1.commit之前，已git add->修改已增加到到暂存区
-        git reset HEAD <file>可以把暂存区的修改撤销（unstage),重新放回工作区
+    git reset HEAD <file>可以把暂存区的修改撤销（unstage),重新放回工作区
 
 #### 待更新（git checkout可替换命令 git switch 和 git restore
 
@@ -105,6 +105,5 @@ $ git add <file> 将文件添加到仓库(暂存区-stage)
 
     git code/*.md
 4.文件夹
-
     git add 文件夹名
 
