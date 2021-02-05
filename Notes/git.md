@@ -9,51 +9,69 @@
 
  ---
 
-### git命令
+## git命令
 
-git init --初始化仓库，将当前目录变成git可管理的仓库
-> 版本控制系统只能跟踪文本文件的变化\
+###1.初始化仓库
+**git init**  初始化仓库，将当前目录变成git可管理的仓库
+> 版本控制系统只能跟踪文本文件的变化
+
 > 在仓库目录下（或子目录）创建文件
 
-$ git add <file> 将文件添加到仓库(暂存区-stage)
-> Unix的哲学是“没有消息就是好消息”
+###3. 将文件添加到暂存区-stage
+**git add <file>**  
 
-#### 把文件提交到仓库
+    1.git add file1.txt [文件1]
+    2.git add file2.txt file3.txt [文件1 文件2 文件3]
+    3.git add . [所有文件]
+    4.git add --all  [所有文件]
+    5.git code/*  [某目录(code)下所有文件]
+    6.git code/*.md [某目录(code)下所有.md文件]
+    7.git add code [code目录]
 
-    $ git commit -m <message>"说明" 
-    告诉get，把文件提交到仓库(当前分支-master)，-m后面是本次提交的说明
+###4.提交暂存区至当前分支
+    git commit -m <message>**
+>**把文件提交到仓库(当前分支main/hosp)，-m后面是本次提交的说明.**
+####vim
+>**git commit 不输入 -m <message>会进入vim模式**
 
-#### git commit 可以一次提交多个文件
+1.vim两种工作模式
+- 命令模式：接受执行vim命令（默认模式）
+- 编辑模式：对打开的文件内容进行 增、删、改 操作；ESC 退回命令模式
 
-    * $ git add file1.txt
-    * $ git add file2.txt file3.txt
-    * $ git commit -m "add 3 files."
+2.创建、打开文件： vi [filename]
+1. vi + 文件路径（或文件名）创建或打开已有文件
+2. 输入‘i'或“Insert”键进入编辑模式
 
-> git status 查看仓库状态（status：状态）
-> git diff <file> 查看差异（difference)，格式是unix通用的diff格式
+3.保存文件：
+1. “ESC” 键，退出编辑模式
+2. 在命令模式下键入"ZZ"或者":wq"保存修改并且退出 vim
+3. 只想保存文件，则键入":w",停留在命令模式
 
-    git diff 比较工作目录中当前文件与暂存区快照之间的差异
-    git diff --cached  查看工作区与head的不同
+4.放弃所有文件修改：
+1. 放弃所有文件修改：按下 "ESC" 键进入命令模式，键入 ":q!" 回车后放弃修改并退出vi
+2. 放弃所有文件修改，但不退出 vi ，按下 "ESC" 键进入命令模式，键入 ":e!" ，回车后回到命令模式。
 
-#### 日志
+###5.显示当前分支状态
+    git status
 
-    $ git log 显示从近到远的提交日志
-    $ git log --pretty=oneline   一行显示，只显示哈希值和提交说明
+###5.显示差异（difference)
+>工作区（working directory）->暂存区（index /stage）->本地仓库（repository）
+>> git自动创建第一个 **master（main)** 分支，以及指向master(main)的 **head** 指针
+    ![image](Images/git01.png "Work Directory-Repository")
+- git diff <file> 查看wording tree与index/stage的差异
+- git diff <file> --cached 查看index/stage与repository的差异
+- git diff <file> HEAD 查看working tree与repository的差异(HEAD代表最近一次commit的信息)
 
-> head 当前版本（指针）
+###6.显示日志
+    git log 显示从近到远的提交日志
+    git log --pretty=oneline   一行显示，只显示哈希值和提交说明
+> **head 指向当前分支（指针）**
 
-#### 版本回退
+###7.版本切换   
+    git reflog 命令记录
+    git reset --head <commit_id>
 
-    $ git reset --head <commit_id>
-
-#### 命令记录
-
-    $ git reflog
-
-#### 修改文件名
-
-#### 修改文件夹名(git mv)
-
+###8.修改文件名
     $ git mv <old folder> <new folder>
     1. -v 显示信息
     2. -f 强制重命名或移动，会覆盖目标文件
@@ -61,49 +79,33 @@ $ git add <file> 将文件添加到仓库(暂存区-stage)
     4. -n 只显示信息
     @只能修改已经追踪的文件，直接commit提交
 
-#### 工作区（Work Directory)-版本库(Repository)
 
-**Work Directory**->本地工作目录,其中的隐藏目录.git未Git的版本库
-**Repostory-版本库**
+###9.撤销工作区的修改（unstage)
+    
+1.未添加到stage     git checkout -- <file>  
+2.已添加到stage
+1. git reset HEAD <file>
+2. git checkout -- <file>
+3.已提交至当前分支->参考[7.版本切换]前提是还未推送至远程库
+    
 
-![image](Images/git01.png "Work Directory-Repository")
-
-> **stage(index)暂存区**\
-> git自动创建第一个 **master** 分支，以及指向master的 **head** 指针
-
-#### git 跟踪并管理的是修改，而非文件
-
-    第一次修改->git add->第二次修改->git add ->git commit
-    每次修改，如果不git add 到暂存区（stage),就不会加入到commit
-
-#### 撤销修改
-
-    git checkout -- <file> 
-
-##### 撤销工作区的修改
-
-    1.commit之前，已git add->修改已增加到到暂存区
-    git reset HEAD <file>可以把暂存区的修改撤销（unstage),重新放回工作区
-
-#### 待更新（git checkout可替换命令 git switch 和 git restore
+##待更新（git checkout可替换命令 git switch 和 git restore
 
 #### 删除文件
+1.输入错误命令：rm <file>
+1. 误删：git checkout -- file    
+2. 确定删除:
+1.  git rm <file>（从版本库中删除文件）
+>误删：git reset --hard(将暂存区和工作区都恢复成指针指向分支的最新版本)
+     
+2.  git commit
+>误删：
 
-    $ git rm <file>
-    $ git commit
+1.   git log --pretty=oneline查看之前提交的commit_id
+2.   git reset --hard commit_id
+3.   git push origin HEAD --force 提交当前HEAD
 
-
-#### git add 多文件
-1.所有文件
-
-    1.git add .
-    2.git add --all
-2.某目录(code)下所有文件
     
-    git code/*
-3.某目录(code)下所有.md文件
-
-    git code/*.md
-4.文件夹
-    git add 文件夹名
+###2.关联远程仓库
+    git remote  add origin git@github:username:breachname.git
 
