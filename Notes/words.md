@@ -1,4 +1,5 @@
 # 单词本
+
 1.init -- 初始化（initialization)\
 2.status -- 状态\
 3.diff-- 差异（difference）\
