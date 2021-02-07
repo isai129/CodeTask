@@ -4,13 +4,15 @@
 
 > 切换至用户主目录下
 
-    ssh-keygen -t rsa -c "youremail@example.com"
+1. 主目录目录下生成SSH Key的秘钥对（.ssh\id_rsa<私钥>,id_rsa.pub<公钥>文件）
+   1.  `cd ~`
+   2.  `ssh-keygen -t rsa -c "youremail@example.com"`
 
-主目录目录下生成.ssh\id_rsa（私钥）,id_rsa.pub（公钥）文件。
+2. 拷贝公钥 id_rsa.pub内容\
+    `cat .ssh/id_rsa.pub`
+## 2.在github中绑定ssh秘钥
 
-## 2.登录github
-
-登陆GitHub，打开“settings”，“SSH and GPG Keys”页面，点击‘New SSH key’， 然后填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容，然后点击’Add SSH key’
+登陆GitHub，打开“settings”，“SSH and GPG Keys”页面，点击‘New SSH key’， 然后填上Title，在Key文本框里粘贴id_rsa.pub文件的内容，然后点击’Add SSH key’
 
 ## 3.创建远程仓库
 
@@ -42,9 +44,10 @@
 
 ### 3.(clone)克隆远程仓库
 
-    git clone <远程仓库SSH地址>
+1. ssh:`git clone git@github.com:user/branch.git` 
+2. https:`git clone https://github.com/user/branch.git` 
 
-> git clone默认会把远程仓库整个给clone下来,但只会在本地默认创建head 指向的分支
+> git clone默认会把远程仓库整个给clone下来,但只会在本地默认创建head指向的分支
 
 #### 1.获取远程指定分支
 
