@@ -8,10 +8,13 @@
 * $ `dir` 显示当期目录 （windows）
 
  ---
+
 ## 设置git的用户名邮箱
+
     1.git config --global user.name ""
     2.git config --global user.email ""
->`git config --list`查看git当前配置 
+
+> `git config --list`查看git当前配置
 
 ## git命令
 
@@ -126,25 +129,57 @@
 3. `git push origin HEAD --force` 提交当前HEAD
 
 ### 10.远程仓库(main主分支)
-####1.添加
+
+#### 1.添加
+
 1. 关联远程仓库： `git remote add origin git@github:username:main.git`
 
 2. 第一次推送main分支的所有内容：`git push -u origin main`
 
 3. 推送最新修改：`git push origin main`
 
-####2.clone远程仓库(main-主分支)
-1. ssh:`git clone git@github.com:user/branch` 
-2. https:`git clone https://github.com/user/branch` 
+#### 2.clone远程仓库(main-主分支)
+
+1. ssh:`git clone git@github.com:user/branch`
+2. https:`git clone https://github.com/user/branch`
 
 ### 11.分支管理
->平行宇宙:，当你正在电脑前努力学习Git的时候，另一个你正在另一个平行宇宙里努力学习SVN:
 
->>在某个时间点，两个平行宇宙合并了，结果，你既学会了Git又学会了SVN！
+> 平行宇宙:，当你正在电脑前努力学习Git的时候，另一个你正在另一个平行宇宙里努力学习SVN:
 
->>>![image](Images/git02.png "branch")
+> > 在某个时间点，两个平行宇宙合并了，结果，你既学会了Git又学会了SVN！
 
-####1. 创建与合并
->`head`指向当前分支
->>创建`dev`分支，git会创建一个`dev`指针，指向`master`相同的提交,再把`HEAD`指向`dev`,就表示当前在dev分支上，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：
->>![image](Images/git03.png "dev")
+> > > ![image](Images/git02.png "branch")
+
+#### 1. 创建与合并
+#####命令
+1. 查看分支：`git branch`
+2. 创建分支：`git branch <name>`
+3. 切换分支：`git switch <name>`
+4. 创建+切换分支：`git switch -c <name>`
+5. 合并某分支到当前分支：` git merge <name>`
+6. 删除分支：`git branch -d <name>`
+
+> `head`指向当前分支
+
+>创建`dev`分支，git会创建一个`dev`指针，指向`master`相同的提交,再把`HEAD`指向`dev`,就表示当前在dev分支上，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：
+
+1.创建并切换到dev分支`git switch -c dev`   
+>  ![image](Images/git03.png "dev")
+
+2.`dev`上的工作完成时，就可以把dev合并到`master`上(把master指向dev的提交)
+1. 切换回master分支`git switch master`
+2. 合并 `git merge master`
+>![image](Images/git04.png "dev")
+
+####2. 解决冲突
+Git无法自动合并分支时，就必须首先解决冲突再合并。
+1. `git log --graph`\
+2. `git log --graph --pretty=oneline --abbrev-commit`
+>![image](Images/git05.png "conflict ")
+
+####3. 分支管理策略
+>合并分支时，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。
+如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样
+分支历史上就可以看出分支信息。
+1. 强制禁用fastforward参数:`--no-f`
