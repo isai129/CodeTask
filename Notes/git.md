@@ -8,6 +8,10 @@
 * $ `dir` 显示当期目录 （windows）
 
  ---
+## 设置git的用户名邮箱
+    1.git config --global user.name ""
+    2.git config --global user.email ""
+>`git config --list`查看git当前配置 
 
 ## git命令
 
@@ -16,7 +20,7 @@
 `git init`
 > 初始化仓库，将当前目录变成git可管理的仓库 | 版本控制系统只能跟踪文本文件的变化 | 在仓库目录下（或子目录）创建文件
 
-### 3. 将文件添加到暂存区-stage
+### 2. 将文件添加到暂存区-stage
 
 `git add <file>`
 
@@ -28,7 +32,7 @@
     6.git code/*.md [某目录(code)下所有.md文件]
     7.git add code [code目录]
 
-### 4.提交暂存区至当前分支
+### 3.提交暂存区至当前分支
 
 `git commit -m <message>`
 > **把文件提交到仓库(当前分支main/hosp)，-m后面是本次提交的说明.**
@@ -42,7 +46,7 @@
 - 命令模式：接受执行vim命令（默认模式）
 - 编辑模式：对打开的文件内容进行 增、删、改 操作；ESC 退回命令模式
 
-2.创建、打开文件： vi [filename]
+2.创建、打开文件： `vi [filename]`
 
 1. vi + 文件路径（或文件名）创建或打开已有文件
 2. 输入‘i'或“Insert”键进入编辑模式
@@ -58,7 +62,7 @@
 1. 放弃所有文件修改：按下 "ESC" 键进入命令模式，键入 ":q!" 回车后放弃修改并退出vi
 2. 放弃所有文件修改，但不退出 vi ，按下 "ESC" 键进入命令模式，键入 ":e!" ，回车后回到命令模式。
 
-### 5.显示当前分支状态
+### 4.显示当前分支状态
 
     git status
 
@@ -93,7 +97,7 @@
     4. -n 只显示信息
     @只能修改已经追踪的文件，直接commit提交
 
-### 9.撤销工作区的修改（unstage)
+### 9.撤销工作区的修改（un stage)
 
 1. 未添加到stage `git checkout -- <file>`
 2. 已添加到stage
@@ -121,7 +125,26 @@
 2. `git reset --hard commit_id`
 3. `git push origin HEAD --force` 提交当前HEAD
 
-### 2.关联远程仓库
+### 10.远程仓库(main主分支)
+####1.添加
+1. 关联远程仓库： `git remote add origin git@github:username:main.git`
 
-    git remote  add origin git@github:username:breachname.git
+2. 第一次推送main分支的所有内容：`git push -u origin main`
 
+3. 推送最新修改：`git push origin main`
+
+####2.clone远程仓库(main-主分支)
+1. ssh:`git clone git@github.com:user/branch` 
+2. https:`git clone https://github.com/user/branch` 
+
+### 11.分支管理
+>平行宇宙:，当你正在电脑前努力学习Git的时候，另一个你正在另一个平行宇宙里努力学习SVN:
+
+>>在某个时间点，两个平行宇宙合并了，结果，你既学会了Git又学会了SVN！
+
+>>>![image](Images/git02.png "branch")
+
+####1. 创建与合并
+>`head`指向当前分支
+>>创建`dev`分支，git会创建一个`dev`指针，指向`master`相同的提交,再把`HEAD`指向`dev`,就表示当前在dev分支上，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：
+>>![image](Images/git03.png "dev")
