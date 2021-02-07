@@ -152,7 +152,9 @@
 > > > ![image](Images/git02.png "branch")
 
 #### 1. 创建与合并
-#####命令
+
+##### 命令
+
 1. 查看分支：`git branch`
 2. 创建分支：`git branch <name>`
 3. 切换分支：`git switch <name>`
@@ -162,24 +164,64 @@
 
 > `head`指向当前分支
 
->创建`dev`分支，git会创建一个`dev`指针，指向`master`相同的提交,再把`HEAD`指向`dev`,就表示当前在dev分支上，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：
+> 创建`dev`分支，git会创建一个`dev`指针，指向`master`相同的提交,再把`HEAD`指向`dev`,就表示当前在dev分支上，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：
 
-1.创建并切换到dev分支`git switch -c dev`   
->  ![image](Images/git03.png "dev")
+1.创建并切换到dev分支`git switch -c dev`
+> ![image](Images/git03.png "dev")
 
 2.`dev`上的工作完成时，就可以把dev合并到`master`上(把master指向dev的提交)
+
 1. 切换回master分支`git switch master`
 2. 合并 `git merge master`
->![image](Images/git04.png "dev")
 
-####2. 解决冲突
+> ![image](Images/git04.png "dev")
+
+#### 2. 解决冲突
+
 Git无法自动合并分支时，就必须首先解决冲突再合并。
+
 1. `git log --graph`\
 2. `git log --graph --pretty=oneline --abbrev-commit`
->![image](Images/git05.png "conflict ")
 
-####3. 分支管理策略
->合并分支时，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。
-如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样
-分支历史上就可以看出分支信息。
+> ![image](Images/git05.png "conflict ")
+
+#### 3. 分支管理策略
+
+> 合并分支时，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。 如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样 分支历史上就可以看出分支信息。
+
 1. 强制禁用fastforward参数:`--no-f`
+   ` git merge --no-ff -m"merge no-ff" alien`
+   > Merge made by the 'recursive' strategy.
+   > ![image](Images/git06.png "meage --no-ff")
+   > 查看分支历史:`git log`
+2. 分支策略
+   ##### 分支命名规则：
+
+|  分支    |  命名规范  |         示例        |     备注     |
+|:-------:|:---------:|:------------------:|:-----------:|
+|**main** |   main    |      main/master    |   主分支    |
+|**develop**|develop-***|develop-20200220v1.3 |以发布版本命名 |
+| release |release-***|release-20200223v2.1 |以发布版本命名 |
+| feature |feature-***|feature-userinfov2.1 |以主要功能点命名|
+|  hotfix |hotfix-*** |hotfix-userQueryError|以修复功能命名 |
+
+1. 主分支
+> master：这个分支最为稳定，这个分支代表项目处于可发布的状态。
+
+> develop：作为开发的分支，平行于master分支。
+2. 支持分支
+> Release：这个分支用来分布新版本,从develop分支创建，完成后合并回develop与master分支
+
+> Feature：功能分支,必须从develop分支创建，完成后合并回develop分支
+
+> Hotfix ：这个分支主要为修复线上特别紧急的bug准备的。必须从**main**分支创建，完成后合并回**develop**与**master**分支。
+
+> ![image](Images/Git-branching-model.png "Git-branching-model")
+
+3. 常用命令
+
+   1. 暂存当前工作：`git stash`(可多次保存)
+      1.  带消息的 Git stash：`git stash save “Your stash message”`
+      2.  存储没有追踪的文件:`git stash save -u`=`git stash save --include-untracked`
+   2. 查看暂存工作列表：`git stash list`
+   3. 恢复工作区：`git stash apply stash@{0}`
