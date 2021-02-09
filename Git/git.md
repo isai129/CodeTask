@@ -39,8 +39,8 @@
 
 `git commit -m <message>`
 > **把文件提交到仓库(当前分支main/hosp)，-m后面是本次提交的说明.**
-
-#### vim
+ 
+ **vim**
 
 > **git commit 不输入 -m <message>会进入vim模式**
 
@@ -108,7 +108,7 @@
     2. `git checkout -- <file>`
     3. 已提交至当前分支->参考[7.版本切换]前提是还未推送至远程库
 
-## 待更新（git checkout可替换命令 git switch 和 git restore
+#### 待更新（git checkout可替换命令 git switch 和 git restore
 
 #### 删除文件
 
@@ -236,16 +236,16 @@ Git无法自动合并分支时，就必须首先解决冲突再合并。
     4. 恢复工作区同时删除stash:`git stash pop`
     5. 复制特定提交到当前分支：   `git cherry-pick <commit>`
 
-#### 13. 扩展： **git merge*与**git rebase**
+### 13. 扩展： **git merge*与**git rebase**
 
-1. 将 feature 分支合并到 master 分支,创建一个新的提交 g 表示两个分支的合并
+> 将 feature 分支合并到 master 分支,创建一个新的提交 g 表示两个分支的合并
 
-> 1. merge 案例
+> ####1. merge 案例
 >> ![image](Images/merage.gif "git-merge")
 
 在 merge 之前选择 rebase。提交会被移除，并且 feature 分支被重置到 master 分支，feature 分支上的提交被 重新应用到 master。差别在于这些重新应用的提交通常是原始的副本，它们的 SHA-1
 值和原来的提交不一样。
-> 2. rebase 案例
+> 2. ####rebase 案例
 >> ![image](Images/rebase.gif "git-rebase")
 > > 将 feature 的基础提交从 b 变为了 c，这就是 rebase 的意思。将 feature 合并到 master 是一个快进合并，
 > 因为在 feature 上的所有提交都是 master 的直接子代
@@ -255,7 +255,7 @@ Git无法自动合并分支时，就必须首先解决冲突再合并。
 > 有一个依赖在 master 上被移除了，但在 feature 上还在使用。当 feature 分支 rebase 到 master 上时，第一个 重新应用的提交会打破你的构建，但只要没有合并冲突，rebase 就不会被中断。从第一个提交出现的错误会保留在随后的所有 提交中，这导致了一个链式的错误提交。这个错误只会在 rebase 完成后才会被发现，并且通常会在顶部增加一个修复 bug 的 提交 g
 >> ![image](Images/rebase_fail.gif "rebase_fail")
 
-### ... ...
+#### ... ...
 
 ### 14. 多人协作
 
