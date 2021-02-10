@@ -1,6 +1,23 @@
 #python数据类型和变量
 
 ---
+
+##第一个python程序
+
+###1. `print（）`函数
+
+[hello python.py](../helloword.py "hello python")
+
+###2. python交互环境
+
+>命令行模式下，可以执行python进入Python交互式环境，也可以执行python hello.py运行一个.py文件。
+
+>`No such file or directory` ：必须切换到`.py`文件所在目录
+
+>Python交互式环境会把每一行Python代码的结果自动打印出来，但是，直接运行Python代码却不会。
+
+[calc.py](../calc.py "calc")
+
 ##数据类型
 
 ---
