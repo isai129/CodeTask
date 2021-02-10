@@ -2,7 +2,7 @@
 
 ---
 
-*pip是[Python_basics.md](python_basics.md "pythonbasics")中的标准库管理器，它允许你安装和管理不属于 Python标准库 的其它软件包。*
+*pip是[Python](python_basics.md "python_basics")中的标准库管理器，它允许你安装和管理不属于 Python标准库 的其它软件包。*
 
 >JavaScript使用npm管理软件包，Ruby使用Gem,.NET使用NuGet。
 
