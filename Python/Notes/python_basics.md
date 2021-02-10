@@ -10,11 +10,13 @@
 
 ###2. python交互环境
 
->命令行模式下，可以执行python进入Python交互式环境，也可以执行python hello.py运行一个.py文件。
+命令行模式下，可以执行python进入Python交互式环境，也可以执行python hello.py运行一个.py文件。
 
->`No such file or directory` ：必须切换到`.py`文件所在目录
+>Git Bash `MinTTY`不支持交互操作,进入python解释器时前面需添加`winpty`。（在 /etc/bash.bashrc 这个文件中加入alias python=’winpty python ‘就好了，然后重启bash，因为它每次重启时会读取bashrc文件来进行初始配置。
 
->Python交互式环境会把每一行Python代码的结果自动打印出来，但是，直接运行Python代码却不会。
+`No such file or directory` ：必须切换到`.py`文件所在目录
+
+Python交互式环境会把每一行Python代码的结果自动打印出来，但是，直接运行Python代码却不会。
 
 [calc.py](../calc.py "calc")
 
