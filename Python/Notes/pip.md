@@ -11,5 +11,67 @@
 
 > Python 拥有一个活跃的社区，它提供了一个更大的软件包集合，以供你开发所需。这些软件包发布在[Python Package Index](https://python.freelycode.com/contribution/detail/1544) ，也被称为 PyPI（发音 Pie Pea Eye）。
 
+##1. Python Package Index(PyPI)
+
 很多软件包通过为已有功能提供了友好地接口来简化 Python 开发。例如，你可以写一个脚本，仅使用 Python 标准库中的功能分析网页的内容：
-[using-http.py](../using-http.py)
+[using-http.py](../using-http.py "pypi")
+pip 会在 PyPI 中查找安装包，计算其依赖关系，安装并确保其能正常工作。
+
+##2. requests
+>PyPI 托管了一个非常流行的库 [requests](https://2.python-requests.org/en/master/ "requests docs") 来完成 HTTP 请求。
+
+##3. 命令
+    1.pip --version #显示版本和路径
+
+    2.pip --help #获取帮助
+
+    3.pip install -U pip #升级pip
+
+    4.pip install SomePackage #最新版本
+
+    5.pip install SomePackage==1.27 #指定版本
+
+    6.pip install SomePackage>=1.27 #最小版本
+
+    7.pip install --upgeade SomePackage #升级包，通过使用==，>=, <=, >, < 来指定一个版本号
+    或pip install -U SomePackage #升级包
+
+    8.pip uninstall SomePackage #卸载包
+
+    9.pip search SomePackage  #搜索包
+
+    10.pip show #显示安装包信息
+
+    11.pip show -f SomePackage #查看指定包的详细信息
+
+    12.pip list #列出已安装的包
+
+    13.pip list -0 #查看可升级的包
+
+    14.pip freeze #查看已经安装的包以及版本信息
+
+    15.pip freeze -all > requirements.txt #输出本地包环境至文件
+
+    16.pip install -r requirements.txt #安装指定文件中的包 (在其他系统中复制开发环境)
+
+    17.pip install redis -i SomePackage -i https://mirrors.aliyun.com/pypi/simple(阿里云）
+
+###国内源:
+
+    1. 阿里云: https://mirrors.aliyun.com/pypi/simple
+
+    2. 中国科技大学: https://pypi.mirrors.ustc.edu.cn/simple
+
+    3. 豆瓣(douban): http://pypi.douban.com/simple
+
+    4. 清华大学: https://pypi.tuna.tsinghua.edu.cn/simple
+
+    5. 中国科学技术大学: http://pypi.mirrors.ustc.edu.cn/simple
+
+
+>当python2和python3同时有pip,则使用方法如下：
+    1. `python2 -m pip install xxx #python2`\
+    2. `python3 -m pip install xxx #python3`
+
+# 测试框架[pytest](https://docs.pytest.org/en/latest/ "pytest")
+

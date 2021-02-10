@@ -2,7 +2,7 @@
 
 ---
 
-##第一个python程序
+##python解释器
 
 ###1. `print（）`函数
 
@@ -10,7 +10,7 @@
 
 ###2. python交互环境
 
-命令行模式下，可以执行python进入Python交互式环境，也可以执行python hello.py运行一个.py文件。
+命令行模式下，可以执行python进入Python交互式环境，也可以执行`python hello.py`运行一个.py文件。
 
 >Git Bash `MinTTY`不支持交互操作,进入python解释器时前面需添加`winpty`。（在 /etc/bash.bashrc 这个文件中加入alias python=’winpty python ‘就好了，然后重启bash，因为它每次重启时会读取bashrc文件来进行初始配置。
 
@@ -19,6 +19,12 @@
 Python交互式环境会把每一行Python代码的结果自动打印出来，但是，直接运行Python代码却不会。
 
 [calc.py](../calc.py "calc")
+
+>直接运行Python文件，windows不行，mac和linux可以在文件首行加入`#!/user/bin/env python3`
+
+###3. 输入与输出（IO)
+   1. `print()`：在括号中加入字符串，可以输出指定文字[helloword.py](../helloword.py "hello word")
+   2. 
 
 ##数据类型
 
