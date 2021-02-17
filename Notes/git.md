@@ -277,7 +277,7 @@ Git无法自动合并分支时，就必须首先解决冲突再合并。
     2. 建立本地分支和远程分支的关联\
        `git branch --set-upstream branch-name origin/branch-name`
     3. 从远程抓取分支\
-       `git push`
+       `git pull`
 
 ### 15. tag标签
 
