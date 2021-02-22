@@ -6,7 +6,7 @@
 
 ### 1. `print（）`函数
 
-[hello python.py](../helloword.py "hello python")
+[hello python.py](../test/helloword.py "hello python")
 
 ### 2. python交互环境
 
@@ -18,13 +18,13 @@
 
 Python交互式环境会把每一行Python代码的结果自动打印出来，但是，直接运行Python代码却不会。
 
-[calc.py](../calc.py "calc")
+[calc.py](../test/calc.py "calc")
 
 > 直接运行Python文件，windows不行，mac和linux可以在文件首行加入`#!/user/bin/env python3`
 
 ### 3. 输入与输出（IO)
 
-1. `print()`：在括号中加入字符串，可以输出指定文字[helloword.py](../helloword.py "hello word")
+1. `print()`：在括号中加入字符串，可以输出指定文字[helloword.py](../test/helloword.py "hello word")
 2.
 
 ## 数据类型
@@ -145,6 +145,56 @@ Python解释器干了两件事情：
 
 >用记事本编辑的时候，从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件
    >![images](../Images/Unicode&UTF-8.png)
-
 >浏览网页的时候，服务器会把动态生成的Unicode内容转换为UTF-8再传输到浏览器：
    >![images](../Images/Unicode&UTF-8.2.png)
+
+###3. Python的字符串
+>在最新的Python 3版本中，字符串是以Unicode编码的，也就是说，Python的字符串支持多语言
+   [the_string.py](../test/the_string.py "string")
+
+   1. 对于单个字符的编码,Python提供了 
+      1.  `ord()`函数获取字符的整数表示；`chr(66)'B'`
+      2.  `chr()`函数把编码转换为对应的字符。`chr(25991)'文'`
+
+>由于Python的字符串类型是`str`，在内存中以Unicode表示，一个字符对应若干个字节。
+> 如果要在网络上传输，或者保存到磁盘上，就需要把`str`变为以字节为单位的`bytes`。
+
+   2. Python对`bytes`类型的数据用带`b`前缀的单引号或双引号表示：`x = b'ABC'`
+>注意区分`'ABC'`和b`'ABC'`，前者是`str`，后者虽然内容显示得和前者一样，但`bytes`的每个字符都只占用一个字节。
+
+   3. 以Unicode表示的`str`通过`encode()`方法可以编码为指定的`bytes`
+
+`'ABC' .encode('ascii')
+b'ABC'
+'中文' .encode('UTF-8')
+b'\xe4\xb8\xad\xe6\x96\x87'`
+>纯英文的`str`可以用`ASCII`编码为`bytes`，内容是一样的，含有中文的`str`可以用`UTF-8`编码为`bytes`。
+> 含有中文的str无法用ASCII编码，因为中文编码的范围超过了ASCII编码的范围，Python会报错。
+
+>在`bytes`中，无法显示为`ASCII`字符的字节，用`\x##`显示。
+
+>反过来，如果我们从网络或磁盘上读取了字节流，那么读到的数据就是`bytes`。要把`bytes`变为`str`，就需要用`decode()`方法：
+   >`b'ABC' .decode('utf-8') 'ABC'`
+
+>如果bytes中包含无法解码的字节，decode()方法会报错：
+   `b'\xe4\xb8\xad\xff'.decode('utf-8')
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 3: invalid start byte`
+>如果`bytes`中只有一小部分无效的字节，可以传入`errors='ignore'`忽略错误的字节：
+
+`b'\xe4\xb8\xad\xfd' .decode('utf-8',errors='ignore')
+'中'`
+>要计算`str`包含多少个字符，可以用`len()`函数：
+`len('abcde')
+5`
+>`len()`函数计算的是`str`的字符数，如果换成`bytes`，`len()`函数就计算字节数：
+
+` len(b'ABC')
+3
+ len(b'\xe4\xb8\xad\xe6\x96\x87')
+6
+len('中文'.encode('utf-8'))
+6`
+
+>在操作字符串时，我们经常遇到`str`和`bytes`的互相转换。为了避免乱码问题，应当始终坚持使用`UTF-8`编码对`str`和`bytes`进行转换。

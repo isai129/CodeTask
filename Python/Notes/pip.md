@@ -89,7 +89,6 @@ pip 会在 PyPI 中查找安装包，计算其依赖关系，安装并确保其�
 
     4. 清华大学: https://pypi.tuna.tsinghua.edu.cn/simple
 
-    5. 中国科学技术大学: http://pypi.mirrors.ustc.edu.cn/simple 
 
 
 # 测试框架[pytest](https://docs.pytest.org/en/latest/ "pytest")
