@@ -261,7 +261,8 @@ Python内置的一种数据类型是列表：list。list是一种有序的集合
   `  ['michael', 'bob', 'tracy']`  
 
 变量classmates 就是一个list  
-用`len()`函数可以获得list元素的个数：
+
+#### 1. `len()` 获得list元素的个数：
     `len(classmates)`  
     `3`
 >用索引来访问list中每一个位置的元素，记得索引是从`0`开始的：
@@ -293,8 +294,20 @@ IndexError: list index out of range`
 IndexError: list index out of range`
 >当然，倒数第4个就越界了。
 
- list是一个可变的有序表，所以，可以往list中追加元素到末尾：
+#### 2.  `append()`，list中追加元素到末尾：
 ` classmates.append('adam')`  
 `classmates`  
 `['michael', 'bob', 'tracy', 'adam']`  
 
+#### 3.  `insert()` ，把元素插入到指定位置：
+
+`classmates.insert(1,'adamx')`
+`classmates`
+`['michael', 'adamx', 'bob', 'tracy', 'adam']`
+
+#### 4. `pop()`，删除list末尾的元素：
+`classmates.pop()`
+`adam`
+`classmates`
+`['michael', 'adamx', 'bob', 'tracy']`
+>
