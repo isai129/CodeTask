@@ -1,9 +1,10 @@
-#Python3 基础语法
+# Python3 基础语法
+
 ___
 
 ## 1. 编码
 
-默认情况下，Python 3 源码文件以 `UTF-8` 编码，所有字符串都是 `unicode` 字符串。 
+默认情况下，Python 3 源码文件以 `UTF-8` 编码，所有字符串都是 `unicode` 字符串。
 
 ---
 
@@ -13,18 +14,18 @@ ___
 - 标识符的其他的部分由字母、数字和下划线组成
 - 标识符对大小写敏感
 
->在 Python 3 中，可以用中文作为变量名，非 ASCII 标识符也是允许的
+> 在 Python 3 中，可以用中文作为变量名，非 ASCII 标识符也是允许的
 ---
 
 ## 3. python保留字
 
 保留字即关键字，我们不能把它们用作任何标识符名称。
 
->Python 的标准库提供了一个 keyword 模块，可以输出当前版本的所有关键字：
+> Python 的标准库提供了一个 keyword 模块，可以输出当前版本的所有关键字：
 >> `import keyword`  
->> `keyword.kwlist`  
->` ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 
- 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal',
+> > `keyword.kwlist`  
+> ` ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del',
+'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal',
 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']`
 ---
 
@@ -77,6 +78,8 @@ python中数字有四种类型：整数、布尔型、浮点数和复数。
 - float(浮点数)：1.24,3E-2
 - complex(复数)：1+2j
 
+---
+
 ## 8. 字符串(String)
 
 - python中单引号和双引号使用完全相同
@@ -90,13 +93,17 @@ python中数字有四种类型：整数、布尔型、浮点数和复数。
 - Python 没有单独的字符类型，一个字符就是长度为 1 的字符串
 - 字符串的截取的语法格式如下：变量[头下标:尾下标:步长]
 
+---
+
 ## 9. 空行
 
 函数之间或类的方法之间用空行分隔，表示一段新的代码的开始。类和函数入口之间也用一行空行分隔，以突出函数入口的开始。
 
 空行与代码缩进不同，空行并不是Python语法的一部分。书写时不插入空行，Python解释器运行也不会出错。但是空行的作用在于分隔两段不同功能或含义的代码，便于日后代码的维护或重构。
 
->空行也是程序代码的一部分。
+> 空行也是程序代码的一部分。
+
+---
 
 ## 10. 等待用户输入
 
@@ -104,11 +111,15 @@ python中数字有四种类型：整数、布尔型、浮点数和复数。
 
 > "\n\n"在结果输出前会输出两个新的空行。一旦用户按下 enter 键时，程序将退出。
 
+---
+
 ## 11. 同一行显示多条语句
 
 Python可以在同一行中使用多条语句，语句之间使用分号`;`分割
 
     import sys ; x = 'runoob'; sys.stdout.write(x + '\n')
+
+---
 
 ## 12. 多个语句构成代码组
 
@@ -118,11 +129,15 @@ Python可以在同一行中使用多条语句，语句之间使用分号`;`分�
 
 我们将首行及后面的代码组称为一个子句(clause)。
 
+---
+
 ## 13. print 输出
 
 print 默认输出是换行的，如果要实现不换行需要在变量末尾加上 end=""：
 
 [print.py](../test/print.py)
+
+---
 
 ## 14. import与form...import
 
@@ -136,3 +151,10 @@ print 默认输出是换行的，如果要实现不换行需要在变量末尾�
 
 - 将某个模块中的全部函数导入，格式为： `from module import *`
 
+---
+
+## 15. 命令行参数
+
+很多程序可以执行一些操作来查看一些基本信息，Python可以使用-h参数查看各参数帮助信息：
+
+$ python -h
