@@ -41,7 +41,7 @@ Python中有六个标准的数据类型：
 
 > 不可变：Number(数字）、String（字符串）、Tuple（元祖）
 
-> 可变：List（列表）、Dictionary（字典）、Set（字典）
+> 可变：List（列表）、Dictionary（字典）、Set（集合）
 
 ---
 
