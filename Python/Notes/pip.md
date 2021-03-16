@@ -61,25 +61,25 @@ pip 会在 PyPI 中查找安装包，计算其依赖关系，安装并确保其�
 >添加pip 配置文件
 
 1. 查看用户主目录下有没有“~/.pip/pip.conf"文件，没有则创建:
-   
+
    1. `cd ~ `
    2. `mkdir .pip`
    3. `touch pip.conf`
-    
-2.打开配置文件，添加配置： 
+
+2.打开配置文件，添加配置：
 1. 豆瓣
-    
+
     >[global]\
-    index-url=http://pypi.douban.com/simple 
+    index-url=http://pypi.douban.com/simple
     [install]trusted-host=pypi.douban.com`
-    
+
 2. 阿里云
-   
+
     [global]\
-    >index-url=http://mirrors.aliyun.com/pypi/simple 
+    >index-url=http://mirrors.aliyun.com/pypi/simple
     [install]trusted-host=mirrors.aliyun.com`
-   
-###国内源:
+
+### 国内源:
 
     1. 阿里云: https://mirrors.aliyun.com/pypi/simple
 
@@ -92,4 +92,3 @@ pip 会在 PyPI 中查找安装包，计算其依赖关系，安装并确保其�
 
 
 # 测试框架[pytest](https://docs.pytest.org/en/latest/ "pytest")
-
