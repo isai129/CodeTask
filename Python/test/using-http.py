@@ -17,4 +17,4 @@ print(f'response returned:{response.status} ({response.reason})')
 print('Body:')
 print(text)
 
-# 脚本中，导入了 cgi 和 http.client，这两个都是在 Python 的标准库中。你创建了一个 HTTPSConnection 对象并指定服务器，然后调用 .request() 和 .getresponse() 解析响应信息。
+# 脚本中，导入了 cgi 和 http.client，这两个都是在 Python 的标准库中。创建一个 HTTPSConnection 对象并指定服务器，然后调用 .request() 和 .getresponse() 解析响应信息。
