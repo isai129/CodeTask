@@ -36,6 +36,7 @@ list1.reverse()
 print(list1)
 # 将列表中的成员排序
 list1.clear()
-list3 = [1, 4, 2, 0, 5, 8]
+list3 = [1, 4, 2, 0, 5, 8, -102]
 list1.extend(list3)
-print(list3.sort())
+list1.sort()
+print(list1)
