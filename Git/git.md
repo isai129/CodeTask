@@ -237,7 +237,6 @@ Git无法自动合并分支时，就必须首先解决冲突再合并。
     5. 复制特定提交到当前分支：   `git cherry-pick <commit>`
 
 ### 13. 扩展： **git merge*与**git rebase**
-
 > 将 feature 分支合并到 master 分支,创建一个新的提交 g 表示两个分支的合并
 
 > ####1. merge 案例
