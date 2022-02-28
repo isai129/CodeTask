@@ -221,7 +221,7 @@ Git无法自动合并分支时，就必须首先解决冲突再合并。
 
 > ![image](Images/Git-branching-model.png "Git-branching-model")
 
-3. 常用命令
+3.常用命令
 
     1. 暂存当前工作： `git stash`(可多次保存)
         1. 带消息的 Git stash： `git stash save “Your stash message”`
@@ -237,7 +237,6 @@ Git无法自动合并分支时，就必须首先解决冲突再合并。
     5. 复制特定提交到当前分支：   `git cherry-pick <commit>`
 
 ### 13. 扩展： **git merge*与**git rebase**
-
 > 将 feature 分支合并到 master 分支,创建一个新的提交 g 表示两个分支的合并
 
 > ####1. merge 案例
@@ -283,7 +282,7 @@ Git无法自动合并分支时，就必须首先解决冲突再合并。
 
 *标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以
 看到这个标签。标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个 分支上都可以看到这个标签。*
-
+        
 1. 新建一个标签：`git tag <tagname>`,默认为`HEAD`,也可以指定一个`commit_id`;
 2. 指定标签信息： `git tag -a <tagname> -m "lalalalalallalal`;
 3. 查看所有标签： `git tag`
