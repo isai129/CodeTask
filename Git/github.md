@@ -6,7 +6,14 @@
 
 1. 主目录目录下生成SSH Key的秘钥对（.ssh\id_rsa<私钥>,id_rsa.pub<公钥>文件）
    1.  `cd ~`
-   2.  `ssh-keygen -t rsa -c "youremail@example.com"`
+   2.  `ssh-keygen -t rsa -C "youremail@example.com"`
+
+   ### 参数  解释
+   >1.-b 采用长度1024bit的密钥对,b=bits,最长4096，不过没啥必要,
+   >2.-t rsa  采用rsa加密方式,t=type,
+   >3.-f 生成文件名,f=output_keyfiles,
+   >4.-C 备注，C=comment,
+   >5.更多参数可运行 man ssh-keygen
 
 2. 拷贝公钥 id_rsa.pub内容\
     `cat .ssh/id_rsa.pub`
@@ -17,7 +24,7 @@
 ## 3.创建远程仓库
 
 ## 4.与本地仓库建立链接
-
+ 
 > 建立关联：`git remote add origin` <远程仓库ssh地址>
 
 > 删除关联：`git remote rm origin`
