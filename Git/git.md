@@ -197,13 +197,13 @@ Git无法自动合并分支时，就必须首先解决冲突再合并。
 2. 分支策略
    ##### 分支命名规则：
 
-|  分支    |  命名规范  |         示例        |     备注     |
-|:-------:|:---------:|:------------------:|:-----------:|
-|**main** |   main    |      main/master    |   主分支    |
-|**develop**|develop-***|develop-20200220v1.3 |以发布版本命名 |
-| release |release-***|release-20200223v2.1 |以发布版本命名 |
-| feature |feature-***|feature-userinfov2.1 |以主要功能点命名|
-|  hotfix |hotfix-*** |hotfix-userQueryError|以修复功能命名 |
+|     分支      |    命名规范     |          示例           |    备注    |
+|:-----------:|:-----------:|:---------------------:|:--------:|
+|  **main**   |    main     |      main/master      |   主分支    |
+| **develop** | develop-*** | develop-20200220v1.3  | 以发布版本命名  |
+|   release   | release-*** | release-20200223v2.1  | 以发布版本命名  |
+|   feature   | feature-*** | feature-userinfov2.1  | 以主要功能点命名 |
+|   hotfix    | hotfix-***  | hotfix-userQueryError | 以修复功能命名  |
 
 1. 主分支
 
