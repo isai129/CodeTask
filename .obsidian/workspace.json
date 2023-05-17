@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "169719e8c3816c04",
+        "id": "2ef510b9f2207c96",
         "type": "tabs",
         "children": [
           {
-            "id": "1fdd856b0cbcb8a7",
+            "id": "1587dda373fb82d5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Linux/docker/Docker命令.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#变量名命名规则",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,13 +85,14 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linux/docker/Docker命令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linux/docker/Docker命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,15 +124,16 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linux/docker/Docker命令.md"
+              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -138,8 +145,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bba1c40e0c966d6c",
+  "active": "1587dda373fb82d5",
   "lastOpenFiles": [
-    "Obsidian"
+    "Linux/docker/手麻数据库端口转发.md",
+    "Linux/docker/Docker命令.md",
+    "Linux/docker/clash.md",
+    "未命名.canvas",
+    "Linux/v.md",
+    "Linux/docker",
+    "Linux/未命名.md",
+    "docker/未命名.md",
+    "docker",
+    "Linux/Que/Que.md",
+    "python_work/food.py~",
+    "python_work/food.py",
+    "python_work/plays.py~",
+    "python_work/plays.py",
+    "python_work/first_numbers.py~",
+    "Python/fun/Python.md",
+    "python_work/apostrophe.py~",
+    "python_work/first_numbers.py",
+    "python_work/magicians.py~",
+    "Python/Notes/datatype.md",
+    "Python/Notes/interpreter.md",
+    "Linux/Que/linux目录.md",
+    "Linux/Que/日志清理.md",
+    "Linux/image/Pasted image 20230508170523.jpg",
+    "Linux/image/2020091021533429.png",
+    "Linux/Que/配置APT的代理服务器.md",
+    "Linux/Que/AppImages.md",
+    "Linux/vim/vim.md",
+    "Linux/vim/vim-vi-workmodel.png",
+    "Linux/vim/vi-vim-cheat-sheet-sch.gif",
+    "Python/Notes/annotation.md",
+    "未命名 1.canvas",
+    "2023-05-09.md",
+    "Python/Notes/python_basics.md",
+    "Python/Notes/pip.md",
+    "Pasted image 20230508170531.png",
+    "Pasted image 20230508170442.png",
+    "Linux/Virtualbox.md"
   ]
 }
