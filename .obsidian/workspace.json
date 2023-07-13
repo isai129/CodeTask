@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2ef510b9f2207c96",
+        "id": "a7c0194ac0ca7ee6",
         "type": "tabs",
         "children": [
           {
-            "id": "1587dda373fb82d5",
+            "id": "ae6a8b3bc6e5ad26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/docker/Docker命令.md",
+                "file": "python_work/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#变量名命名规则",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "e3afbf6d53fb53ef",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/docker/Docker命令.md",
+                "file": "python_work/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/docker/Docker命令.md",
+                "file": "python_work/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +115,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -125,15 +125,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/docker/Docker命令.md"
+                "file": "python_work/Python.md"
               }
             }
+          },
+          {
+            "id": "f4196cd2ef9f8b48",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -145,45 +154,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1587dda373fb82d5",
+  "active": "ae6a8b3bc6e5ad26",
   "lastOpenFiles": [
-    "Linux/docker/手麻数据库端口转发.md",
-    "Linux/docker/Docker命令.md",
-    "Linux/docker/clash.md",
-    "未命名.canvas",
-    "Linux/v.md",
-    "Linux/docker",
-    "Linux/未命名.md",
-    "docker/未命名.md",
-    "docker",
-    "Linux/Que/Que.md",
-    "python_work/food.py~",
-    "python_work/food.py",
-    "python_work/plays.py~",
-    "python_work/plays.py",
-    "python_work/first_numbers.py~",
-    "Python/fun/Python.md",
-    "python_work/apostrophe.py~",
-    "python_work/first_numbers.py",
-    "python_work/magicians.py~",
-    "Python/Notes/datatype.md",
-    "Python/Notes/interpreter.md",
-    "Linux/Que/linux目录.md",
-    "Linux/Que/日志清理.md",
-    "Linux/image/Pasted image 20230508170523.jpg",
-    "Linux/image/2020091021533429.png",
-    "Linux/Que/配置APT的代理服务器.md",
-    "Linux/Que/AppImages.md",
-    "Linux/vim/vim.md",
-    "Linux/vim/vim-vi-workmodel.png",
-    "Linux/vim/vi-vim-cheat-sheet-sch.gif",
-    "Python/Notes/annotation.md",
-    "未命名 1.canvas",
-    "2023-05-09.md",
-    "Python/Notes/python_basics.md",
-    "Python/Notes/pip.md",
     "Pasted image 20230508170531.png",
     "Pasted image 20230508170442.png",
-    "Linux/Virtualbox.md"
+    "python_work/Python.md",
+    "python_work/alien.py~",
+    "python_work/alien.py",
+    "Linux/docker/FTP.md",
+    "Linux/docker/Docker命令.md",
+    "Linux/docker/clash.md",
+    "Linux/docker/手麻数据库端口转发.md",
+    "docker/未命名.md",
+    "python_work/answer.md",
+    "Sql/常用SQL语句总结.md",
+    "python_work/apostrophe.py",
+    "python_work/2.3.5apostrophe.py",
+    "Python/Notes/operator.md",
+    "Python/Notes/number.md",
+    "Python/Notes/pip.md",
+    "Python/Notes/python_function.md",
+    "Python/Notes/syntax.md",
+    "Linux/Que/配置APT的代理服务器.md",
+    "NET/(5)IP如何编址.md",
+    "NET/(4)认识IP协议.md",
+    "NET/(3)详解ARP协议.md",
+    "NET/(2)交换机怎么干活.md",
+    "NET/(1)初识网络.md",
+    "NET/VLSM&CIDR&NET.md",
+    "NET/TCP&IP协议、三次握手、四次挥手.md",
+    "Sql",
+    "python_work/topping.py~",
+    "python_work/topping.py",
+    "python_work/voting.py~",
+    "Python/Notes/string.md",
+    "Python/Notes/python_basics.md",
+    "Linux/Que/linux目录.md",
+    "Linux/Que/docker中出现日志损坏无法读取.md",
+    "python_work/voting.py",
+    "python_work/conditional_tests.py~",
+    "Linux/image/Pasted image 20230508170523.jpg",
+    "Linux/image/2020091021533429.png",
+    "Git/Images/git04.png",
+    "Git/Images/git02.png",
+    "Git/Images/Git-branching-model.png",
+    "Python/Images/Unicode&UTF-8.2.png",
+    "Python/Images/Unicode&UTF-8.png",
+    "Python/Images/tuple0.png",
+    "未命名.canvas",
+    "未命名 1.canvas"
   ]
 }

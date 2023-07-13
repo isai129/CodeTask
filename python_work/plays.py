@@ -14,4 +14,6 @@ for player in players[:3]:
     print(player)
 
 
-# 4.4.3复制列表
+
+
+
