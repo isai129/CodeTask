@@ -257,9 +257,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 3: invalid 
 ### 1. list （列表）
 
 Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。
-`   classmates = ['michael','bob','tracy']`  
-`  classmates`  
-`  ['michael', 'bob', 'tracy']`
+` classmates = ['michael','bob','tracy']`  
+` classmates`  
+` ['michael', 'bob', 'tracy']`
 
 变量classmates 就是一个list
 

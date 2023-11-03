@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python_work/Python.md",
+                "file": "Linux/docker/Docker命令.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e20c850f3a2440f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/docker/手麻数据库端口转发.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "843f15ac973d1ecb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NET/Catch/IPv4 子网.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8abc7481c437303d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NET/Catch/IPv4 子网.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 226.5
   },
   "right": {
     "id": "e3afbf6d53fb53ef",
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python_work/Python.md",
+                "file": "NET/Catch/IPv4 子网.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python_work/Python.md",
+                "file": "NET/Catch/IPv4 子网.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python_work/Python.md"
+                "file": "NET/Catch/IPv4 子网.md"
               }
             }
           },
@@ -151,56 +188,58 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "remotely-save:Remotely Save": false
     }
   },
-  "active": "ae6a8b3bc6e5ad26",
+  "active": "843f15ac973d1ecb",
   "lastOpenFiles": [
-    "Pasted image 20230508170531.png",
-    "Pasted image 20230508170442.png",
-    "python_work/Python.md",
-    "python_work/alien.py~",
-    "python_work/alien.py",
-    "Linux/docker/FTP.md",
-    "Linux/docker/Docker命令.md",
-    "Linux/docker/clash.md",
-    "Linux/docker/手麻数据库端口转发.md",
-    "docker/未命名.md",
-    "python_work/answer.md",
-    "Sql/常用SQL语句总结.md",
-    "python_work/apostrophe.py",
-    "python_work/2.3.5apostrophe.py",
-    "Python/Notes/operator.md",
-    "Python/Notes/number.md",
-    "Python/Notes/pip.md",
-    "Python/Notes/python_function.md",
-    "Python/Notes/syntax.md",
-    "Linux/Que/配置APT的代理服务器.md",
-    "NET/(5)IP如何编址.md",
-    "NET/(4)认识IP协议.md",
-    "NET/(3)详解ARP协议.md",
-    "NET/(2)交换机怎么干活.md",
     "NET/(1)初识网络.md",
+    "NET/Catch/IPv4 子网.md",
+    "NET/Catch/HTTP 状态码参考.md",
+    "Linux/docker/Docker命令.md",
+    "NET/Catch",
+    "NET/(5)IP如何编址.md",
     "NET/VLSM&CIDR&NET.md",
     "NET/TCP&IP协议、三次握手、四次挥手.md",
-    "Sql",
-    "python_work/topping.py~",
-    "python_work/topping.py",
-    "python_work/voting.py~",
+    "for_test/study/2023-10/mysite/polls/models.py~",
+    "for_test/study/2023-10/mysite/db.sqlite3-journal",
+    "for_test/study/2023-10/mysite/polls/migrations/__pycache__/0001_initial.cpython-311.pyc",
+    "for_test/study/2023-10/mysite/polls/migrations/0001_initial.py",
+    "for_test/study/2023-10/mysite/polls/migrations/__pycache__/__init__.cpython-311.pyc",
+    "for_test/study/2023-10/mysite/polls/migrations/__pycache__",
+    "for_test/study/2023-10/mysite/polls/__pycache__/admin.cpython-311.pyc",
+    "for_test/study/2023-10/mysite/polls/__pycache__/models.cpython-311.pyc",
+    "for_test/study/2023-10/mysite/polls/__pycache__/apps.cpython-311.pyc",
+    "Linux/docker/Docker更新容器镜像.md",
+    "Linux/docker/docker-compose命令.md",
+    "Linux/docker/docker-compose.md",
+    "Linux/docker/clash.md",
+    "Python/Notes/pip.md",
+    "Python/Notes/number.md",
+    "Python/Notes/datatype.md",
+    "Python/Notes/annotation.md",
+    "Python/列表(list)、元祖(tuple)、集合(set)，和字典(dictionary)区别和联系.md",
+    "python_work/Python.md",
+    "python_work/CIDR.md",
+    "Python/Notes/syntax.md",
     "Python/Notes/string.md",
+    "Python/Notes/python_function.md",
     "Python/Notes/python_basics.md",
-    "Linux/Que/linux目录.md",
+    "Python/Notes/interpreter.md",
+    "Python/Notes/operator.md",
+    "Sql/常用SQL语句总结.md",
     "Linux/Que/docker中出现日志损坏无法读取.md",
-    "python_work/voting.py",
-    "python_work/conditional_tests.py~",
-    "Linux/image/Pasted image 20230508170523.jpg",
-    "Linux/image/2020091021533429.png",
+    "Linux/vim/vim-vi-workmodel.png",
+    "Linux/vim/vi-vim-cheat-sheet-sch.gif",
+    "Git/Images/rebase_fail.gif",
+    "Git/Images/rebase.gif",
+    "Git/Images/merage.gif",
+    "Git/Images/git07.png",
+    "Git/Images/main-branches@2x.png",
+    "Git/Images/git06.png",
+    "Git/Images/git05.png",
     "Git/Images/git04.png",
-    "Git/Images/git02.png",
-    "Git/Images/Git-branching-model.png",
-    "Python/Images/Unicode&UTF-8.2.png",
-    "Python/Images/Unicode&UTF-8.png",
-    "Python/Images/tuple0.png",
     "未命名.canvas",
     "未命名 1.canvas"
   ]

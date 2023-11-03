@@ -36,7 +36,7 @@ reverse_lookup_enable=NO #/etc/vsftpd/vsftpd.conf
 ```
 
 
-```bash
+```shell
 
 /etc/vsftpd/vsftpd.conf
 anonymous_enable=YES #允许匿名访问,如果为NO，ftp、anonymous帐户将无法访问！
@@ -198,7 +198,6 @@ use_localtime=YES #显示目录清单时是用本地时间还是GMT时间,可以
 use_sendfile=YES #测试平台优化
 
 setproctitle_enable=YES #显示会话状态信息,关!
-
 
 
 ```

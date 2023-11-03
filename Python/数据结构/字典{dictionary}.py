@@ -98,7 +98,6 @@ print(dic)
 dic['py9']['female'] = 6  # 找到元祖，增加键值对female:6
 print(dic)
 
-
 # 应用实例：
 # 输入一串字符，遇到字母，转换为‘_’,并打印输出
 
@@ -107,3 +106,16 @@ for i in info:
     if i.isalpha():
         info = info.replace(i, '_')
 print(info)
+
+
+# 函数
+
+def power(x, n=2):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+
+
+power(2, )

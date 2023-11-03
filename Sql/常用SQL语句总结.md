@@ -398,7 +398,7 @@ DROP PROCEDURE test_loop;		# 删除存储过程test_loop
     执行上面创建的存储过程
     
     ```sql
-    SET @uid = 2;	# 员工id不是通过查询获得的，需要自己赋值时使用set给变量初始值
+    SET @uid = 2;# 员工id不是通过查询获得的，需要自己赋值时使用set给变量初始值
     CALL saleinfo(@uid,@sal_price,@sal_vol,@sal_total);	# 调用变量，uid已经赋值，其它参数通过查询计算获取
     SELECT @uid,@sal_price,@sal_vol,@sal_total;	# 查看获取的结果
     ```
@@ -548,7 +548,7 @@ DROP TRIGGER tri_log;	# 删除名为tri_log的触发器
     FROM workers;
     ```
     
-2. IF()函数
+2. if()函数
     
     if函数可以理解为case函数的简化版，若只是简单的逻辑判断，IF函数才更适合，使用方法如下示例
     

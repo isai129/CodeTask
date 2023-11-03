@@ -78,9 +78,7 @@ print(digits)
 print(min(digits)) # 最小值  
 print(max(digits)) # 最大值  
 print(sum(digits)) # 总和  
-  
-
-
+ 
 ```
 
 
@@ -90,7 +88,6 @@ print(sum(digits)) # 总和
 
 ```bash
 avengers = ['iron man','captain america','hulk','thor','black widow','hawkeye']
-
 print(f"1.{avengers[0]}")
 print(f"2.{avengers[1]}")
 print(f"3.{avengers[2]}")
@@ -141,7 +138,7 @@ print(f"\n{to_old.title()} is too old.")
 print(avengers)
 
 # 使用方法 sort()对列表永久排序(按与字母顺序正向)  
-  
+
 cars = ['toyota', 'suvaru', 'bmw', 'audi']  
 cars.sort()  
 print(cars)  
@@ -290,8 +287,6 @@ else:
 print(car.title()) # 否则返回 False,就以首字母大写的方式打印  
   
   
-
-
 ```
 
 

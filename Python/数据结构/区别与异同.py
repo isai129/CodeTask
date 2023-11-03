@@ -22,10 +22,10 @@ print(list1)
 # 获得参数在列表中的位置
 t = list1.index(3)
 print(t)
-# 先列表中插入数据
+# 在列表中插入数据
 list2.insert(3, 'ree')
 print(list2)
-# 删除列表中的成（通过下标删除）
+# 删除列表中的成员（通过下标删除）
 list2.pop(3)
 print(list2)
 # 删除列表中的成员
