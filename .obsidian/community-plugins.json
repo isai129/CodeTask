@@ -2,5 +2,11 @@
   "calendar",
   "language-translator",
   "remotely-save",
-  "obsidian-timeline"
+  "obsidian-timeline",
+  "obsidian-textgenerator-plugin",
+  "excalibrain",
+  "obsidian-git",
+  "dataview",
+  "obsidian-excalidraw-plugin",
+  "cm-editor-syntax-highlight-obsidian"
 ]

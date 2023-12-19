@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ae6a8b3bc6e5ad26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/docker/Docker命令.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7e20c850f3a2440f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/docker/手麻数据库端口转发.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "843f15ac973d1ecb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NET/Catch/IPv4 子网.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8abc7481c437303d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NET/Catch/IPv4 子网.md",
+                "file": "Docker/快速部署 Alist 和 Aria2 Pro.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5
+    "width": 200
   },
   "right": {
     "id": "e3afbf6d53fb53ef",
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NET/Catch/IPv4 子网.md",
+                "file": "Docker/快速部署 Alist 和 Aria2 Pro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NET/Catch/IPv4 子网.md",
+                "file": "Docker/快速部署 Alist 和 Aria2 Pro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NET/Catch/IPv4 子网.md"
+                "file": "Docker/快速部署 Alist 和 Aria2 Pro.md"
               }
             }
           },
@@ -174,8 +137,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -183,63 +145,66 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "remotely-save:Remotely Save": false
+      "remotely-save:Remotely Save": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
   "active": "843f15ac973d1ecb",
   "lastOpenFiles": [
-    "NET/(1)初识网络.md",
-    "NET/Catch/IPv4 子网.md",
-    "NET/Catch/HTTP 状态码参考.md",
-    "Linux/docker/Docker命令.md",
+    "Docker/使用docker命令的时候，都要添加sudo权限.md",
+    "Docker/手麻数据库端口转发.md",
+    "Docker/clash.md",
+    "Docker/docker 代理.md",
+    "Docker/Docker pull 提速(未生效).md",
+    "Docker/docker-compose.md",
+    "Docker/docker-compose命令.md",
+    "Docker/Docker更新容器镜像.md",
+    "Docker/Docker命令.md",
+    "Docker/docker容器自启动.md",
+    "Docker/FTP.md",
+    "Docker/home-assistant.io.md",
+    "Docker/Install Docker Engine on Ubuntu.md",
+    "Docker/jellyfin.md",
+    "Docker/快速部署 Alist 和 Aria2 Pro.md",
+    "VBoxManage/VDI压缩.md",
+    "VBoxManage/在linux和windows下 双系统互启.md",
+    "VBoxManage/在 Linux 上的 VirtualBox 中从虚拟机访问 USB.md",
+    "Linux/启用root.md",
+    "Linux/idm-linux.md",
+    "Docker/Docker-Compose/Clash.md",
+    "Docker/Docker-Compose/Alist.md",
+    "Docker/Docker-Compose/portainer.md",
+    "Docker/Docker-Compose",
+    "Linux/磁盘操作/6.格式化、手动挂载、自动挂载、卸载实操.md",
+    "Linux/vsftpd.md",
+    "Linux/vsftpd参考手册.md",
+    "Linux/磁盘操作",
+    "Linux/image/2020091021533429.png",
+    "Excalidraw",
+    "Pasted image 20230508170442.png",
+    "Pasted image 20230508170531.png",
+    "Pasted image 20231208101404.png",
+    "Pasted image 20231208101703.png",
+    "Pasted image 20231208101648.png",
+    "Pasted image 20231208101632.png",
+    "Pasted image 20231208101519.png",
+    "Pasted image 20231208101456.png",
+    "Pasted image 20231208101442.png",
+    "VBoxManage",
     "NET/Catch",
-    "NET/(5)IP如何编址.md",
-    "NET/VLSM&CIDR&NET.md",
-    "NET/TCP&IP协议、三次握手、四次挥手.md",
     "for_test/study/2023-10/mysite/polls/models.py~",
     "for_test/study/2023-10/mysite/db.sqlite3-journal",
     "for_test/study/2023-10/mysite/polls/migrations/__pycache__/0001_initial.cpython-311.pyc",
     "for_test/study/2023-10/mysite/polls/migrations/0001_initial.py",
     "for_test/study/2023-10/mysite/polls/migrations/__pycache__/__init__.cpython-311.pyc",
-    "for_test/study/2023-10/mysite/polls/migrations/__pycache__",
-    "for_test/study/2023-10/mysite/polls/__pycache__/admin.cpython-311.pyc",
-    "for_test/study/2023-10/mysite/polls/__pycache__/models.cpython-311.pyc",
-    "for_test/study/2023-10/mysite/polls/__pycache__/apps.cpython-311.pyc",
-    "Linux/docker/Docker更新容器镜像.md",
-    "Linux/docker/docker-compose命令.md",
-    "Linux/docker/docker-compose.md",
-    "Linux/docker/clash.md",
-    "Python/Notes/pip.md",
-    "Python/Notes/number.md",
-    "Python/Notes/datatype.md",
-    "Python/Notes/annotation.md",
-    "Python/列表(list)、元祖(tuple)、集合(set)，和字典(dictionary)区别和联系.md",
-    "python_work/Python.md",
-    "python_work/CIDR.md",
-    "Python/Notes/syntax.md",
-    "Python/Notes/string.md",
-    "Python/Notes/python_function.md",
-    "Python/Notes/python_basics.md",
-    "Python/Notes/interpreter.md",
-    "Python/Notes/operator.md",
-    "Sql/常用SQL语句总结.md",
-    "Linux/Que/docker中出现日志损坏无法读取.md",
-    "Linux/vim/vim-vi-workmodel.png",
-    "Linux/vim/vi-vim-cheat-sheet-sch.gif",
-    "Git/Images/rebase_fail.gif",
-    "Git/Images/rebase.gif",
-    "Git/Images/merage.gif",
-    "Git/Images/git07.png",
-    "Git/Images/main-branches@2x.png",
-    "Git/Images/git06.png",
-    "Git/Images/git05.png",
-    "Git/Images/git04.png",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
