@@ -7,8 +7,8 @@ ps -ef | grep sshd
 2. 通过进程ID查看
 	1. 通过进程ID查询端口占用：
 	
-	```bash
-	netstat -nap | grep 522
+```bash
+netstat -nap | grep 522
 ```
 	
 	2. 通过进程ID 查询进程名：
