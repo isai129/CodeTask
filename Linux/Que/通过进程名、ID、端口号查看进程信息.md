@@ -5,6 +5,7 @@ ps -ef | grep sshd
 ```
 
 2. 通过进程ID查看
+
 	1. 通过进程ID查询端口占用：
 	
 ```bash
