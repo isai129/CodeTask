@@ -320,7 +320,7 @@ sudo nano /etc/ufw/before.rules
 附加下面的行：
 
 ```bash
-#NAT table rules
+[[NAT]] table rules
 *nat
 :POSTROUTING ACCEPT [0:0]
 

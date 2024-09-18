@@ -17,12 +17,12 @@ services:
           cpus: '0.1'
           memory: 256M
     network_mode: 'host'
-      #ports:
-      #- "9999:9000"
-      #- "8000:8000"
+      [[ports]]:
+      [[-]] "9999:9000"
+      [[-]] "8000:8000"
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock #数据文件挂载
-      - portainer_data:/data portainer/portainer-ce #配置文件挂载
+      - /var/run/docker.sock:/var/run/docker.sock [[数据文件挂载]]
+      - portainer_data:/data portainer/portainer-ce [[配置文件挂载]]
     environment:
       - HTTP_PROXY=http://127.0.0.1:7890
       - HTTPS_PROXY=http://127.0.0.1:7890

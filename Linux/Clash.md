@@ -1,5 +1,5 @@
- Linux 上优雅的使用 Clash 
-
+  
+[[Linux/Clash|Clash]][[Git/Clash|Clash]][[Clash Premium]][[Docker/Docker-Compose/Clash|Clash]]
 
 > 此方式推荐在纯终端（无图形化界面）环境下使用，有图形化界面的情况下推荐使用 [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/releases) 或 [Clash Verge](https://github.com/zzzgydi/clash-verge)，相关博文可见—[Linux 上 Clash For Windows 如何设置开机自启与桌面图标](https://blog.zzsqwq.cn/posts/clash-for-windows-on-linux/)。
 
@@ -88,7 +88,7 @@ services:
 
 ```shell
 ~/Services/clash
-❯ cd ~/Services/clash #下述所有操作都在该文件夹执行
+❯ cd ~/Services/clash [[下述所有操作都在该文件夹执行]]
 
 ~/Services/clash
 ❯ wget -O config.yaml $your-proxy-url
@@ -146,17 +146,17 @@ external-ui: /ui
 ~/Services/clash
 ❯ docker ps               
 CONTAINER ID   IMAGE             COMMAND    CREATED          STATUS          PORTS                                                                                                      NAMES
-304c4934e528   dreamacro/clash   "/clash"   53 minutes ago   Up 52 minutes   0.0.0.0:7890-7891->7890-7891/tcp, :::7890-7891->7890-7891/tcp, 0.0.0.0:9090->9090/tcp, :::9090->9090/tcp   clash
+304c4934e528   dreamacro/clash   "/clash"   53 minutes ago   Up 52 minutes   0.0.0.0:7890-7891->7890-7891/tcp, ==:7890-7891->7890-7891/tcp, 0.0.0.0:9090->9090/tcp, :==9090->9090/tcp   clash
 ```
 
 可以通过在该目录下执行 `docker-compose logs` ，或在任何位置执行 `docker logs clash` 查看容器日志
 
 ```shell
 ~/Services/clash
-❯ docker-compose logs | tail -n 20 #查看最近20条log
+❯ docker-compose logs | tail -n 20 [[查看最近20条log]]
 
 ~
-❯ docker logs clash | tail -n 30 #查看最近30条
+❯ docker logs clash | tail -n 30 [[查看最近30条]]
 ```
 
 关闭容器可以使用 `docker-compose down`，即可停止并移除该容器，不留任何残余（~~干净又卫生啊兄弟们~~）。
@@ -282,7 +282,7 @@ external-ui: /opt/clash/ui
 
 ```shell
 ~/Services/clash
-❯ sudo systemctl start clash
+❯ sudo [[[[systemctl]]]] start clash
 ```
 
 **设置为开机自启动**

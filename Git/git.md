@@ -16,7 +16,7 @@
 
 > `git config --list`查看git当前配置
 
-## git命令
+
 
 ### 1.初始化仓库
 

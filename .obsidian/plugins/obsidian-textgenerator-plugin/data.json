@@ -1,5 +1,5 @@
 {
-  "version": "0.5.13",
+  "version": "0.7.11",
   "endpoint": "https://api.openai.com/v1",
   "models": {},
   "api_key": "",
@@ -8,12 +8,13 @@
   "max_tokens": 500,
   "temperature": 0.7,
   "frequency_penalty": 0.5,
-  "prompt": "",
   "showStatusBar": true,
   "outputToBlockQuote": false,
   "freeCursorOnStreaming": false,
   "allowJavascriptRun": false,
+  "experiment": false,
   "promptsPath": "textgenerator/prompts",
+  "textGenPath": "textgenerator/",
   "prefix": "\n\n",
   "tgSelectionLimiter": "^\\*\\*\\*",
   "stream": true,
@@ -47,7 +48,13 @@
     "text-extractor-tool": true,
     "stop-stream": true,
     "custom-instruct": true,
-    "reload": true
+    "reload": true,
+    "batch-generate-in-right-click-files-menu": true,
+    "tg-block-processor": true
+  },
+  "advancedOptions": {
+    "generateTitleInstructEnabled": false,
+    "generateTitleInstruct": "Generate a title for the current document (do not use * \" \\ / < > : | ? .):\n{{substring content 0 255}}"
   },
   "autoSuggestOptions": {
     "isEnabled": true,
@@ -56,6 +63,10 @@
     "triggerPhrase": "  ",
     "stop": ".",
     "showStatus": true
+  },
+  "slashSuggestOptions": {
+    "isEnabled": false,
+    "triggerPhrase": "/"
   },
   "extractorsOptions": {
     "PDFExtractor": true,
@@ -66,6 +77,7 @@
     "ImageExtractor": true
   },
   "displayErrorInEditor": false,
+  "LLMProviderProfiles": {},
   "LLMProviderOptions": {
     "whisper": {
       "base_path": "https://api.openai.com/v1"
@@ -82,5 +94,6 @@
   "LLMProviderOptionsKeysHashed": {
     "Google Palm (Langchain).api_key": "__@#key_prefix#@__AIzaSyAhjff6i4So6aJLd94OEDbGdI34m1LfoeM"
   },
+  "prompt": "",
   "api_key_encrypted": "__@#key_prefix#@__"
 }

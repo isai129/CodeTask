@@ -23,7 +23,7 @@
 ```shell
 sudo touch /etc/cloud/cloud-init.disabled
 
-#init 6
+[[init]] 6
 reboot
 ```
 

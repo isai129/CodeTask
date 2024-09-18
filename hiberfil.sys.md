@@ -1,3 +1,3 @@
 
-#关闭win10休眠
+[[关闭win10休眠]]
 powercfg -hibernate off

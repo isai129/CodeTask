@@ -24,7 +24,7 @@ print("Hello Python World!")
 ## 2.2.3 变量是标签
 
 
-## 2.3  字符串
+## 2.3  字符串[[string]]
 
 ```bash
 name = 'irene'
@@ -35,17 +35,17 @@ print(f"清除前面空格\n'{name.lstrip()}'") # 清除前面空格
 print(f"清除后面空格\n'{name.rstrip()}'") # 清除后面空格
 print(f"清除前后空格\n'{name.strip()}'")  # 清除前后空格
 # f字符串,f 是 format（设置格式）的简写，通过把花括号内的变量替换为其值来设置字符串的格式
-#将消息 
+[[将消息]] 
 message = f"\tHello {name.strip()},\n\tlet`s go to see move!"
 print(message)
-#在编程中，空白泛指任何非打印字符，如空格、制表符和换行符。你可以使用空白来组织输
-#出，让用户阅读起来更容易。
+[[在编程中，空白泛指任何非打印字符，如空格、制表符和换行符。你可以使用空白来组织输]]
+[[出，让用户阅读起来更容易。]]
 # /n:换行符; /t:制表符
 print("Languages:\n\tPython\n\tC\n\tJavaScript")
 
 ```
 
-## 2.4数
+## 2.4数[[number]]
 
 ```bash
 # 2.4.3 数值列表,函数 range() 能够轻松地生成一系列数  

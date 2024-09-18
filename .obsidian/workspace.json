@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a7c0194ac0ca7ee6",
+        "id": "60cb9f979c41c27c",
         "type": "tabs",
         "children": [
           {
-            "id": "843f15ac973d1ecb",
+            "id": "c00438c913743e62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/快速部署 Alist 和 Aria2 Pro.md",
+                "file": "Git/waydroin.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/快速部署 Alist 和 Aria2 Pro.md",
+                "file": "Git/waydroin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker/快速部署 Alist 和 Aria2 Pro.md",
+                "file": "Git/waydroin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/快速部署 Alist 和 Aria2 Pro.md"
+                "file": "Git/waydroin.md"
               }
             }
           },
@@ -145,67 +145,69 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "remotely-save:Remotely Save": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "remotely-secure:Remotely Sync": false
     }
   },
-  "active": "843f15ac973d1ecb",
+  "active": "c00438c913743e62",
   "lastOpenFiles": [
-    "Docker/使用docker命令的时候，都要添加sudo权限.md",
-    "Docker/手麻数据库端口转发.md",
-    "Docker/clash.md",
-    "Docker/docker 代理.md",
+    "Docker/Clash Premium.md",
     "Docker/Docker pull 提速(未生效).md",
-    "Docker/docker-compose.md",
+    "Docker/docker 代理.md",
     "Docker/docker-compose命令.md",
-    "Docker/Docker更新容器镜像.md",
+    "Docker/都要添加sudo权限使用docker命令的时候，.md",
+    "Docker/手麻数据库端口转发.md",
+    "Docker/快速部署 Alist 和 Aria2 Pro.md",
+    "Docker/Proxy Provider Converter.md",
+    "Docker/Install Docker Engine on Ubuntu.md",
+    "Docker/docker-compose.md",
     "Docker/Docker命令.md",
     "Docker/docker容器自启动.md",
-    "Docker/FTP.md",
+    "Docker/Docker更新容器镜像.md",
     "Docker/home-assistant.io.md",
-    "Docker/Install Docker Engine on Ubuntu.md",
-    "Docker/jellyfin.md",
-    "Docker/快速部署 Alist 和 Aria2 Pro.md",
+    "Image/vi-vim-cheat-sheet-sch.gif.md",
+    "Image/Pasted image 20231208101703.png",
+    "README.md",
     "VBoxManage/VDI压缩.md",
+    "hiberfil.sys.md",
+    "2024-02-04.md",
     "VBoxManage/在linux和windows下 双系统互启.md",
-    "VBoxManage/在 Linux 上的 VirtualBox 中从虚拟机访问 USB.md",
-    "Linux/启用root.md",
-    "Linux/idm-linux.md",
-    "Docker/Docker-Compose/Clash.md",
-    "Docker/Docker-Compose/Alist.md",
-    "Docker/Docker-Compose/portainer.md",
-    "Docker/Docker-Compose",
-    "Linux/磁盘操作/6.格式化、手动挂载、自动挂载、卸载实操.md",
-    "Linux/vsftpd.md",
-    "Linux/vsftpd参考手册.md",
-    "Linux/磁盘操作",
-    "Linux/image/2020091021533429.png",
-    "Excalidraw",
-    "Pasted image 20230508170442.png",
-    "Pasted image 20230508170531.png",
-    "Pasted image 20231208101404.png",
-    "Pasted image 20231208101703.png",
-    "Pasted image 20231208101648.png",
-    "Pasted image 20231208101632.png",
-    "Pasted image 20231208101519.png",
-    "Pasted image 20231208101456.png",
-    "Pasted image 20231208101442.png",
-    "VBoxManage",
-    "NET/Catch",
-    "for_test/study/2023-10/mysite/polls/models.py~",
-    "for_test/study/2023-10/mysite/db.sqlite3-journal",
-    "for_test/study/2023-10/mysite/polls/migrations/__pycache__/0001_initial.cpython-311.pyc",
-    "for_test/study/2023-10/mysite/polls/migrations/0001_initial.py",
-    "for_test/study/2023-10/mysite/polls/migrations/__pycache__/__init__.cpython-311.pyc",
+    "Image/Pasted image 20231128121032.png",
+    "Image/Pasted image 20230508170531.png",
+    "Git/words.md",
+    "Git/waydroin.md",
+    "Git/Drawing 2023-12-08 10.58.40.excalidraw.md",
+    "Git/Drawing 2023-12-22 17.18.51.excalidraw.md",
+    "English Class/Reader/Charlotte's Web - E. B. White.pdf",
+    "Linux/两步验证.md",
+    "Linux/Que/SSH.md",
+    "English Class/Reader/Beauty and The Beast - unknown writer.pdf",
+    "English Class/Reader/Alice's Adventures in Wonderland - Lewis Carroll.pdf",
+    "English Class/Reader/Animal Farm - George Orwell.pdf",
+    "English Class/Reader/The Journey To The West - Wu Cheng-en.pdf",
+    "English Class/Reader/The Adventures of Pinocchio - Carlo Collodi.pdf",
+    "English Class/Reader/Grimm's Fairy Tales - Jacob Grimm & Wilhelm Grimm.pdf",
+    "English Class/Reader/Fairy Tales of Hans Christian Andersen - Hans Christian Andersen.pdf",
+    "English Class/Reader/1984 - George Orwell.pdf",
+    "English Class/Reader",
+    "Image/Pasted image 20231208101404.png",
+    "Image/Pasted image 20231127152123.png",
+    "Image/Pasted image 20230508170442.png",
     "未命名.canvas",
+    "venv/lib/python3.11/site-packages/django/contrib/admin/static/admin/img/gis/move_vertex_on.svg",
+    "venv/lib/python3.11/site-packages/django/contrib/admin/static/admin/img/gis/move_vertex_off.svg",
+    "venv/lib/python3.11/site-packages/django/contrib/gis/static/gis/img/draw_polygon_on.svg",
+    "venv/lib/python3.11/site-packages/django/contrib/gis/static/gis/img/draw_polygon_off.svg",
+    "英语词义分类数据库/未命名.canvas",
     "未命名 1.canvas"
   ]
 }

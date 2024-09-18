@@ -1,12 +1,16 @@
 [
   "calendar",
   "language-translator",
-  "remotely-save",
   "obsidian-timeline",
   "obsidian-textgenerator-plugin",
   "excalibrain",
   "obsidian-git",
   "dataview",
   "obsidian-excalidraw-plugin",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "remotely-secure",
+  "auto-note-mover",
+  "number-headings-obsidian",
+  "obsidian-latex-suite",
+  "obsidian-dictionary-plugin"
 ]

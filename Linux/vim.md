@@ -1,5 +1,5 @@
 # vim分为三种模式
-![image](vi-vim-cheat-sheet-sch.gif)
+![image](vi-vim-cheat-sheet-sch.gif.md)
 ## 1.命令模式（Command mode)-默认模式
 - i切换到输入模式，以输入字符
 - x 删除当前光标所在处的支付
