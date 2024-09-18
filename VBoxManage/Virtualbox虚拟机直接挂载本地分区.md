@@ -1,6 +1,6 @@
 
 
-#LDM
+[[LDM]]
 
 ```bash
 
@@ -9,7 +9,7 @@ VBoxManage internalcommands createrawvmdk -filename '/home/initial/VirtualBox VM
 
 ```
 
-#NTFS
+[[NTFS]]
 
 ```bash
 

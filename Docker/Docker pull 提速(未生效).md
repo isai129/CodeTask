@@ -16,7 +16,7 @@ initial@initial-Vostro:/etc/docker$ cat daemon.json
   ]
 }
 
-initial@initial-Vostro:/etc/docker$ sudo systemctl daemon-reload 
+initial@initial-Vostro:/etc/docker$ sudo [[systemctl]] daemon-reload 
 initial@initial-Vostro:/etc/docker$ sudo systemctl restart docker
 
 

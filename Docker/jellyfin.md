@@ -22,11 +22,11 @@
 
 ### 体积映射 ( `-v`)[¶](https://docs.linuxserver.io/images/docker-jellyfin/#volume-mappings-v "永久链接")
 
-|体积|功能|
-|---|---|
-|`/config`|Jellyfin 数据存储位置。_这可能会变得非常大，对于大型集合来说可能超过 50GB。_|
-|`/data/movies`|媒体去这里。根据需要添加任意数量，例如`/data/movies`、`/data/tv`等。|
-|`/data/tvshows`|媒体去这里。根据需要添加任意数量，例如`/data/movies`、`/data/tv`等。|
+| 体积              | 功能                                             |
+| --------------- | ---------------------------------------------- |
+| `/config`       | Jellyfin 数据存储位置。_这可能会变得非常大，对于大型集合来说可能超过 50GB。_ |
+| `/data/movies`  | 媒体去这里。根据需要添加任意数量，例如`/data/movies`、`/data/tv`等。 |
+| `/data/tvshows` | 媒体去这里。根据需要添加任意数量，例如`/data/movies`、`/data/tv`等。 |
 
 #### 杂项选项[¶](https://docs.linuxserver.io/images/docker-jellyfin/#miscellaneous-options "永久链接")
 
@@ -206,11 +206,11 @@ services:
     network_mode: 'host'
     ports:
       - 8096:8096
-      - 8920:8920 #optional
-      - 7360:7359/udp #optional
-      - 1900:1900/udp #optional
+      - 8920:8920 [[optional]]
+      - 7360:7359/udp [[optional]]
+      - 1900:1900/udp [[optional]]
     devices:
-      - /dev/dri:/dev/dri #optional
+      - /dev/dri:/dev/dri [[optional]]
     restart: unless-stop
 
 ```

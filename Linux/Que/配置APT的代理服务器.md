@@ -9,11 +9,11 @@ sudo vim /etc/apt/apt.conf.d/proxy.conf
 2.在配置文件中配置以下内容
 ```bash
 Acquire {
-  HTTP::proxy "http://proxy_server:port/";
-  HTTPS::proxy "http://proxy_server:port/";
+  HTTP::proxy "http://127.0.0.1:7890/";
+  HTTPS::proxy "http://127.0.0.1:7890/";
 }
 ```
 3.如果您的代理支持身份验证，并需要用户名/密码登录，使用如下配置：
 ```bash
-Acquire::http::Proxy "http://user:password@proxy_server:port/";
+Acquire==http==Proxy "http://user:password@proxy_server:port/";
 ```

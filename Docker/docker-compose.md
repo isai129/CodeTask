@@ -43,47 +43,47 @@ ok，重点来了，我们来看看如何使用docker compose吧。
 以下定义了docker-compose-demo和 docker-compose-mysql-demo两个容器，相关指令解释可查看后面的注释。
 
 ```javascript
-version : '3'                                      #compose文件版本支持特定的Docker版本
-services:                                          #本工程的服务配置列表
+version : '3'                                      [[compose文件版本支持特定的Docker版本]]
+services:                                          [[本工程的服务配置列表]]
  
-  docker-compose-demo:                             #服务名，自定义
-    container_name: docker-compose-container-demo  #容器名
+  docker-compose-demo:                             [[服务名，自定义]]
+    container_name: docker-compose-container-demo  [[容器名]]
 
-    build:                                         #基于Dockerfile文件构建镜像时使用的属性
-      context: .                                   #代表当前目录，也可以指定绝对路径[/path/test/Dockerfile]或相对路径[../test/Dockerfile]，尽量放在当前目录，便于管理
-      dockerfile: Dockerfile-demo                  #指定Dockerfile文件名
+    build:                                         [[基于Dockerfile文件构建镜像时使用的属性]]
+      context: .                                   [[代表当前目录，也可以指定绝对路径]][/path/test/Dockerfile]或相对路径[../test/Dockerfile]，尽量放在当前目录，便于管理
+      dockerfile: Dockerfile-demo                  [[指定Dockerfile文件名]]
     ports:                                         
-      - "5555:6666"                                #指定宿主机端口映射到本容器的端口
+      - "5555:6666"                                [[指定宿主机端口映射到本容器的端口]]
     volumes:                                        
       - .:/tmp                        
-             #目录挂载
-    depends_on:                                    #本服务启动，依赖于mysql，也就是mysql优先于docker-compose-demo启动
+             [[目录挂载]]
+    depends_on:                                    [[本服务启动，依赖于mysql，也就是mysql优先于docker-compose-demo启动]]
       - mysql
 
-    restart: always                                #是否随docker服务启动重启
-    networks:                                      #加入指定网络
-      - my-network                                 #自定义的网络名
-    environment:                                   #设置容器的环境变量
-      - TZ=Asia/Shanghai                           #这里设置容器的时区为亚洲上海，也就解决了容器通过compose编排启动的时区问题
+    restart: always                                [[是否随docker服务启动重启]]
+    networks:                                      [[加入指定网络]]
+      - my-network                                 [[自定义的网络名]]
+    environment:                                   [[设置容器的环境变量]]
+      - TZ=Asia/Shanghai                           [[这里设置容器的时区为亚洲上海，也就解决了容器通过compose编排启动的时区问题]]
  
-  mysql:                                           #服务名，自定义
-    container_name: docker-compose-mysql-demo      #容器名
-    image: mysql:5.7                               #指定基于mysql:5.7镜像为基础镜像来构建镜像。ports:
+  mysql:                                           [[服务名，自定义]]
+    container_name: docker-compose-mysql-demo      [[容器名]]
+    image: mysql:5.7                               [[指定基于mysql]]:5.7镜像为基础镜像来构建镜像。ports:
       - "33061:3306"
-    command: [                                           #使用command可以覆盖容器启动后默认执行的命令
-            '--character-set-server=utf8mb4',            #设置数据库表的数据集
-            '--collation-server=utf8mb4_unicode_ci',     #设置数据库表的数据集
-            '--default-time-zone=+8:00'                  #设置mysql数据库的时区问题
+    command: [                                           [[使用command可以覆盖容器启动后默认执行的命令]]
+            '--character-set-server=utf8mb4',            [[设置数据库表的数据集]]
+            '--collation-server=utf8mb4_unicode_ci',     [[设置数据库表的数据集]]
+            '--default-time-zone=+8:00'                  [[设置mysql数据库的时区问题]]
     ]
     environment:           
-      MYSQL_DATABASE: swapping                            #设置初始的数据库名
-      MYSQL_ROOT_PASSWORD: 398023                         #设置root连接密码
+      MYSQL_DATABASE: swapping                            [[设置初始的数据库名]]
+      MYSQL_ROOT_PASSWORD: 398023                         [[设置root连接密码]]
       MYSQL_ROOT_HOST: '%'
     restart: always
     networks:
       - my-network
 networks:                        
-  my-network:                                             #自定义的网络
+  my-network:                                             [[自定义的网络]]
 ```
 
  
@@ -91,34 +91,34 @@ networks:
 **docker-compose常用命令**
 
 ```javascript
-#启动
+[[启动]]
 docker-compose -f /data/docker-compose/docker-compose.yml up -d  
 
-#ps：列出所有运行容器
+[[ps：列出所有运行容器]]
 docker-compose ps
 
-#logs：查看服务日志输出
+[[logs：查看服务日志输出]]
 docker-compose logs
 
-#build：构建或者重新构建服务
+[[build：构建或者重新构建服务]]
 docker-compose build
 
-#start：启动指定服务已存在的容器
+[[start：启动指定服务已存在的容器]]
 docker-compose start docker-compose-demo
 
-#stop：停止已运行的服务的容器
+[[stop：停止已运行的服务的容器]]
 docker-compose stop docker-compose-demo
 
-#rm：删除指定服务的容器
+[[rm：删除指定服务的容器]]
 docker-compose rm docker-compose-demo
 
-#up：构建、启动容器
+[[up：构建、启动容器]]
 docker-compose up
 
-#-d：后台运行
+[[-d：后台运行]]
 docker-compose up -d
 
-#stop：停止容器
+[[stop：停止容器]]
 docker-compose stop
 ```
 
