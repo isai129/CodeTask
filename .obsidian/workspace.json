@@ -162,16 +162,14 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
-      "remotely-save:Remotely Save": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
-      "obsidian-weread-plugin:同步微信读书笔记": false,
-      "obsidian-git:Open Git source control": false,
-      "github-sync:Sync with Remote": false
+      "remotely-secure:Remotely Sync": false
     }
   },
   "active": "a83b2e2eb04acb36",
   "lastOpenFiles": [
+    "未命名.canvas",
     "for_test/study/2023-10/mysite/polls/migrations/__pycache__",
     "for_test/study/2023-10/mysite/polls/__pycache__/views.cpython-311.pyc",
     "for_test/study/2023-10/mysite/polls/__pycache__/urls.cpython-311.pyc",
@@ -182,7 +180,6 @@
     "for_test/study/2023-10/mysite/polls/__pycache__",
     "for_test/study/2023-10/mysite/mysite/__pycache__/wsgi.cpython-311.pyc",
     "for_test/study/2023-10/mysite/mysite/__pycache__/urls.cpython-311.pyc",
-    "for_test/study/2023-10/mysite/mysite/__pycache__/settings.cpython-311.pyc",
     "github/科学上网.md",
     "Python/Notes/datatype.md",
     "Python/Images/python-str-runoob.png",
@@ -218,7 +215,6 @@
     "Image/Pasted image 20231128151334.png",
     "Image/Pasted image 20230508170442.png",
     "Git/Images/rebase_fail.gif",
-    "未命名.canvas",
     "英语词义分类数据库/未命名.canvas",
     "未命名 1.canvas"
   ]
