@@ -1,5 +1,6 @@
 import random
 import sys
+
 import pygame
 
 # 全局定义

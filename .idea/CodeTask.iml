@@ -7,6 +7,5 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12 (CodeTask)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="for_test" />
   </component>
 </module>
