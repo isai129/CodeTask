@@ -1,0 +1,52 @@
+Agent: Hello, thank you for calling T-Mobile. How can I assist you today?
+
+Customer: Hi, I'm having trouble activating my eSIM. My old iPhone was lost, and I need to transfer my number to my new phone.
+
+Agent: I understand. To activate your eSIM, I'll need to verify your account. Could you please provide the last name on the account?
+
+Customer: Sure, it's [Last Name].
+
+Agent: Thank you. Now, could you confirm the email address associated with your account?
+
+Customer: It's [Email Address].
+
+Agent: Great. Let's proceed with activating your eSIM. To do this, I'll need to send a verification code to your email. Could you please check your inbox and provide me with the code once you receive it?
+
+Customer: Okay, I got the code. It's [Verification code].
+
+Agent: Thank you. Now, I'll need to know the IMEI number of your new phone. You can find it by dialing *#06# on your phone's keypad.
+
+Customer: The IMEI number is [IMEI Number].
+
+Agent: Perfect. I'm now activating your eSIM. This process may take a few minutes. Please keep your phone connected to Wi-Fi or a strong cellular signal. Once the activation is complete, you should be able to make and receive calls and texts.
+
+Customer: Great, thank you. I'll wait for the activation to finish.
+
+Agent: You're welcome. If you have any other questions or concerns, please don't hesitate to contact us again.
+_____________________________________________________________________________________________________________________________________________________________________________________
+
+Agent: Hello, thank you for calling T-Mobile. How can I assist you today?
+
+Ming: Hi, I'd like to change my phone plan to the $0 Legacy Pay As You Go plan.
+
+Agent: To confirm, you'd like to switch to the $0 Legacy Pay As You Go plan? ($3 Prepaid PayGo)
+
+Ming: Yes, that's correct.
+
+Agent: To proceed with the plan change, I'll need to verify your account information. Could you please provide your phone number?
+
+Ming: My phone number is [Phone Number].
+
+Agent: Thank you. I've verified your account. To confirm, you've recently activated an eSIM on this line, correct?
+
+Ming: Yes, that's right.
+
+Agent: Okay, I'll proceed with the plan change. Please note that there may be a brief service interruption while we make the necessary adjustments.
+
+Ming: Alright, thank you.
+
+Agent: Once the plan change is complete, you'll be on the $0 Legacy Pay As You Go plan. You'll only be charged for the services you use, such as calls, texts, and data.
+
+Ming: Great, thank you for your help.
+
+Agent: You're welcome. Please let me know if you have any other questions.
